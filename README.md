@@ -4,8 +4,7 @@
 # デモ
 
 ![saite](https://user-images.githubusercontent.com/72873269/97398210-22ebc980-192e-11eb-8261-2f82ab482269.png)
-
-<img src="https://user-images.githubusercontent.com/72873269/97397637-0e5b0180-192d-11eb-8122-e30aa525ab8b.png"　width="300px">
+![php](https://user-images.githubusercontent.com/72873269/97398290-49116980-192e-11eb-929a-7ed73623278a.png)
 
 # バージョン
 PHP ver7.4
