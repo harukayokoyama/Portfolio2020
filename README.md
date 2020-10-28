@@ -2,8 +2,9 @@
 転職用のポートフォリオです。HTML・CSSで作成したポートフォリオ用サイト、模写サイト、PHPで作成したクイズサイトが入ってます。
 
 # デモ
+<img src="https://user-images.githubusercontent.com/72873269/97397637-0e5b0180-192d-11eb-8122-e30aa525ab8b.png"　width="300px">
 
-<img src="***画像のURL***" width="***サイズ***">
+<img src="https://user-images.githubusercontent.com/72873269/97397637-0e5b0180-192d-11eb-8122-e30aa525ab8b.png"　width="300px">
 
 # バージョン
 PHP ver7.4
