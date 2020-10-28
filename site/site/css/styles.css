@@ -1,0 +1,143 @@
+body{
+    margin: 0;/*いらない余白けす*/
+    font-size: 16px;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    /* color: #333;ちょっと明るい黒にする */
+}
+
+.nav{
+    display: flex;
+    font-size: 0.8rem;
+    list-style: none;
+    margin-top: 28px;
+}
+
+header .nav li{
+    margin-left: 24px;
+    font-size: 0.8rem;
+}
+
+header li a{
+    text-decoration: none;/*下線なくす*/
+    color: black;
+}
+
+header .page-header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 0 auto;/*中央に？*/
+    
+}
+
+.page-header h2{
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+
+.top img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+
+.about{
+    background-color: #EDEDED;
+    text-align: center;
+    padding: 32px 0;
+}
+
+.about img{
+    border-radius: 50%;/*画像を丸にする*/
+    width: 200px;
+}
+
+.works{
+    text-align: center;
+    background-color: #FFA7A0;
+    padding-top: 32px;
+    padding-bottom: 64px;  
+}
+
+.works img{
+    width: 200px;
+    height: 220px;
+}
+
+.works ul{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;    
+}
+
+.skill{
+    background-color: #EDEDED;
+    padding: 32px 0;
+}
+
+.skill h2{
+    text-align: center;
+}
+
+.skill h3{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+}
+
+.skill li{
+    margin: 0 24px;
+}
+
+.skill ul{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact{
+    text-align: center;
+    padding: 32px 0;
+}
+
+footer{
+    padding: 64px 0;
+    background: #323135;
+    color: #fff;
+    text-align: center;
+}
+
+/*横長にした時の設定*/
+@media(min-width: 900px){
+
+    header .page-header{
+        width: 960px;
+    }
+
+    .works ul{
+        width: 800px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .works li{
+        width: 250px;
+    }
+
+    .skill ul{
+        width: 800px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+}
