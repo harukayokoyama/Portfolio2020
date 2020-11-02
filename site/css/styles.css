@@ -35,44 +35,9 @@ header .page-header{
     margin-top: 20px;
 }
 
-/* 以下ハンバーガーメニューコピペ
-header .btn-gnavi{
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 30px;
-    height: 24px;
-    z-index: 3;
-    cursor: pointer;
-    transition: all 400ms;
-    -webkit-transition:all 400ms;
-}
-
-header .btn-gnavi span {
-    position: absolute;
-    width: 30px;
-    height: 4px;
-    background: #666;
-    border-radius: 10px;
-    -webkit-transition: all 400ms;
-    transition: all 400ms
-}
-header .btn-gnavi span:nth-child(1){
-    top: 0;
-}
-
-header .btn-gnavi span:nth-child(2){
-    top: 10px;
-}
-
-header .btn-gnavi span:nth-child(3){
-    top: 20px;
-} */
-
-/*-------------------------------*/
 .top img{
     width: 100%;
-    vertical-align: bottom;/*画像の下をぴったりつける*//*キターーーこれだ*/
+    vertical-align: bottom;
 }
 
 
@@ -94,12 +59,9 @@ header .btn-gnavi span:nth-child(3){
     padding-bottom: 64px;  
 }
 
-/* .works li{
-    padding-bottom: 64px;    
-} */
-
 .works img{
     width: 200px;
+    height: 220px;
 }
 
 .works ul{
@@ -172,7 +134,7 @@ footer{
     }
 
     .skill ul{
-        width: 800px;
+        width: 900px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
