@@ -18,12 +18,13 @@ class Quiz
 
     public function checkAnswer()
     {
-        $correctAnswer = $this->_quizSet[$_SESSION['current_num']]['a'][0]; //aの0番目が正解
+        $correctAnswer = $this->_quizSet[$_SESSION['current_num']]['a'][0]; //aの0番目が正
+        //正解数表示用
         if ($correctAnswer === $_POST['answer']) {
             $_SESSION['correct_count']++;
         }
-        $_SESSION['current_num']++;//問題数を1増やすため
-
+        //問題数を1増やす
+        $_SESSION['current_num']++;
         return $correctAnswer;
     }
 
@@ -36,7 +37,7 @@ class Quiz
     //正解数
     public function getScore()
     {
-        return round($_SESSION['corrent_count'] / count($this->_quizSet) * 100);
+        return round($_SESSION['correct_count'] / count($this->_quizSet) * 100);
     }
 
     //最後の問題になったらボタンを変えるため

@@ -20,20 +20,6 @@ body {
     background-color: #fff;
   } 
 
-  /* .btn-kai{
-    background-color: #eb6100;    
-    width: 100px;
-    line-height: 50px;
-   
-    font-size: 1rem;
-    border-radius: 5px/*角を少し丸くする;
-    text-align: center;
-  } */
-  .btn-kai a{
-    color: #fff;
-    text-decoration: none;
-    display: block;
-  }
 
   #container h1 {
     /* background-image: url("haikei.png"); */

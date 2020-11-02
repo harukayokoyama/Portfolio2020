@@ -1,11 +1,14 @@
 $(function () {
     'use strict';
 
+    //初期表示は非表示
+    document.getElementById("p1").style.display ="none";
+
     //liをクリックするイベント
     $('.answer').on('click', function () {
         //クリックされた要素のテキストを引っ張る
         var $selected = $(this);
-        //一つ押したらほかのボタンを押せないようにする(処理中普段)
+        //一つ押したらほかのボタンを押せないようにする
         if ($selected.hasClass('correct') || $selected.hasClass('wrong')) {
             return;
         }
@@ -15,7 +18,9 @@ $(function () {
         var answer = $selected.text();
         
         //Ajax処理
-        $.post('./_answer.php', {
+        $.post({
+            url:  "_answer.php",
+          }, {
             answer: answer//checkAnswer(正解数表示部分)のため
 
         }).done(function (res) {
@@ -37,7 +42,17 @@ $(function () {
             //disabled(半透明)のクラスを消去＝押せるようになる
             $('#btn').removeClass('disabled');
 
-            document.getElementById("text").innerHTML = "解説が入る";
+            //選択肢を押すと解説を表示
+            const p1 = document.getElementById("p1");
+
+	        if(p1.style.display=="block"){
+		        // noneで非表示
+		        p1.style.display ="none";
+	        }else{
+		        // blockで表示
+		        p1.style.display ="block";
+            }
+            
         });
     });
 
@@ -48,7 +63,5 @@ $(function () {
         }
     });
 
-    //解説を押すと解説を表示する
-   
 
 });

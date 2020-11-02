@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 require_once(__DIR__ . '/config.php');
 require_once(__DIR__ . '/Quiz.php');
@@ -31,7 +32,7 @@ if (!$quiz->isFinished()) {
       </div>
       <a href=""><div id="btn">Replay?</？></a>
     </div>
-        <?php $quiz->reset(); ?>
+    <?php $quiz->reset(); ?>
   <?php else : ?>
     <div id="container">
       <h1>Q. <?= h($data['q']); ?></h1>
@@ -42,25 +43,12 @@ if (!$quiz->isFinished()) {
       </ul>
       <div class="kaisetsu">
         <h2>よくわかる解説</h2>
-        <div id="text-button"><p id="text"></p></div>
-        <!-- <input type="button" value="解説を表示"> -->
-        <!-- <button type="button" id="form-button">入力</button> -->
-        <!-- <div id="form-text"></div> -->
-        <!-- <a class="btn-kai" name=kai><a href="#">解説を表示</a></a> -->
-        <!-- ?php if(isset($_POST['kai'])) : ?> -->
-        <!-- ?= h($data['k']); ?> -->
-        <!-- <p id="ans-20170519-1"></p> -->
-        <!-- <p>mumuu</p> -->
-        <!-- ?php endif; ?> -->
-        <!-- <div id="form-text"></div>     -->
-
+        <p id="p1"><?= h($data['k']); ?></p>
       </div>
       <div id="btn" class="disabled"><?= $quiz->isLast() ? 'Show Result' : 'Next Question'; ?></div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!--ライブラリここのVerをミスすると動かない-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><!--ライブラリここのVerをミスすると動かない-->
     <script src="quiz.js"></script>
-    <!-- <sc type="text/javascript" src="quiz.js"></sc> -->
   <?php endif; ?>
 </body>
 
